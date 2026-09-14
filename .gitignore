@@ -1,0 +1,15 @@
+node_modules/
+*.db
+*.db-journal
+*.send-state.json
+.wa-session/
+**/qr.png
+**/qr.html
+**/media/
+_smoke.mjs
+.DS_Store
+
+# Any linked login profile, wherever it is pointed. The profile IS the login.
+.wa-profile*/
+.wa-session*/
+**/.linked

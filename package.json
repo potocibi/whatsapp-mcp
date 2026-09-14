@@ -1,0 +1,23 @@
+{
+  "name": "whatsapp-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for WhatsApp in three opt-in layers: a read-only archive reader, a live scraper that links its own device, and a guarded sender",
+  "type": "module",
+  "bin": {
+    "whatsapp-mcp": "src/server.js"
+  },
+  "scripts": {
+    "start": "node --no-warnings src/server.js",
+    "test": "node --no-warnings --test",
+    "link": "node --no-warnings scripts/link.mjs"
+  },
+  "engines": {
+    "node": ">=22.5"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "puppeteer-core": "^25.10.0"
+  },
+  "license": "MIT",
+  "private": true
+}
